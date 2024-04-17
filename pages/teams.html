@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/bootstrap.css">
+    <link rel="stylesheet" href="../styles/mdb.min.css">
+    <link rel="stylesheet" href="../aos-master/dist/aos.css">
+    <link rel="stylesheet" href="../styles/team.css">
+    <link rel="stylesheet" href="../styles/portfolio.css">
+    <script src="../aos-master/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/7cdd666234.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7cdd666234.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5 logo">
+            <img src='./images/Finallogo.jpeg' alt="">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#vision">VISION</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">CONTACT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/teams.html">TEAM</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="team">
+        <div class="careerhanding">
+            <h1>Team</h1>
+        </div>
+        <div id="portfolio">
+            <div class="portfoliocards-row">
+                <div class="portfoliocard-container">
+                    <div class="portfoliocard">
+                        <div class="card-front">
+                            <img src="{% static person.image.url %}" alt="Image Description">
+                        </div>
+                        <div class="card-back">
+                            <h3>{{ person.full_name }}</h3>
+                            <p>{{ person.designation|default:"Not available" }}</p>
+                            <p>{{ person.description|default:"Not available" }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
