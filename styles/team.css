@@ -15,7 +15,8 @@ body, html {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
       position: relative; /* For potential absolute positioned elements */
       overflow: hidden; /* Ensures nothing spills outside the border-radius */
-      margin-top: 5%
+      margin-top: 5%;
+      margin-bottom: 5%;
     }
     
     .careerhanding h1 {
@@ -24,7 +25,6 @@ body, html {
       font-weight: bold; /* Bold font for emphasis */
       letter-spacing: 2px; /* Spreads out the letters for a modern look */
       animation: fadeIn 2s ease-out; /* Animation for the heading */
-      margin-top: 5%;
     }
     
     .careerhanding h3 {
